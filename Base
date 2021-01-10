@@ -13,10 +13,13 @@ void qFunction()
     for(int i = 0; i < 21; i++)
         {
             cout << "\n" << quest[i] <<"\n";
+            cout << "Answer: ";
             cin >> ansInput;
+            
             while (ansInput != 1 && ansInput != 0)
                 {
-                    cout << "Please enter a 1 or 0\n";
+                    cout << "\nPlease enter a 1 or 0\n";
+                    cout << "Answer: ";
                     cin >> ansInput;
                 }
             if(ansInput == 1)
@@ -27,14 +30,18 @@ void qFunction()
             {
                 counter--;
             }
-             if (counter > 0)
-            {
-                cout << "You are Team A";
-            }
-            else
-            {
-                cout << "You are Team B";
-            }
+        }
+    if (counter > 0)
+        {
+        cout << "\n**************\n";    
+        cout << "You are Team A";
+        cout << "\n**************\n";
+        }
+        else
+        {
+            cout << "\n**************\n";
+            cout << "You are Team B";
+            cout << "\n**************";
         }
     }   
     
@@ -45,8 +52,9 @@ int main()
 
     int userInput;
     
-
-    cout << "Welcome to the Question Game\n";
+    cout << "******************************\n";
+    cout << "*Welcome to the Question Game*\n";
+    cout << "******************************\n";
 
     cout << "Type 1 to Start or 0 to Exit: ";
 
@@ -72,7 +80,3 @@ int main()
 
     return 0;
 }
-
-
-
-
